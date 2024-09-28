@@ -22,7 +22,21 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "cookie-popup": [
+        "./dist/cookie-popup"
+      ],
+      "powered-storage": [
+        "./dist/powered-storage"
+      ],
+      "style-manager": [
+        "./dist/style-manager"
+      ],
+      "theme-picker": [
+        "./dist/theme-picker"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

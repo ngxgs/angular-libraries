@@ -3,5 +3,140 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "theme-picker": {
+      "projectType": "library",
+      "root": "projects/theme-picker",
+      "sourceRoot": "projects/theme-picker/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/theme-picker/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/theme-picker/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/theme-picker/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/theme-picker/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "style-manager": {
+      "projectType": "library",
+      "root": "projects/style-manager",
+      "sourceRoot": "projects/style-manager/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/style-manager/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/style-manager/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/style-manager/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/style-manager/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "cookie-popup": {
+      "projectType": "library",
+      "root": "projects/cookie-popup",
+      "sourceRoot": "projects/cookie-popup/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/cookie-popup/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/cookie-popup/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/cookie-popup/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/cookie-popup/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "powered-storage": {
+      "projectType": "library",
+      "root": "projects/powered-storage",
+      "sourceRoot": "projects/powered-storage/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/powered-storage/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/powered-storage/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/powered-storage/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/powered-storage/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }
