@@ -1,0 +1,29 @@
+{
+  "name": "ngx-style-manager",
+  "description": "Manage stylesheets on your Angular application.",
+  "version": "0.0.1",
+  "author": {
+    "email": "gabriel.dsouzapro@gmail.com",
+    "name": "Gabriel de Souza",
+    "url": "https://www.linkedin.com/in/sougabriels/"
+  },
+  "keywords": [
+    "Angular",
+    "Stylesheet Manager",
+    "Renderer2",
+    "Server-Side Rendering"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sougabriel/ngx-libraries.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
