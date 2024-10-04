@@ -28,7 +28,7 @@ export class MyComponent {
 
 ### Repository
 
-You can contribute to this library and others through its GitHub repository: [sougabriel/ngx-libraries](https://github.com/sougabriel/ngx-libraries).
+You can contribute to this library and others through its GitHub repository: [ngxgs/libraries](https://github.com/ngxgs/libraries.git).
 
 ### Author
 
