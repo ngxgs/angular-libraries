@@ -1,5 +1,5 @@
 {
-  "name": "ngx-style-manager",
+  "name": "@ngxgs/style-manager",
   "description": "Manage stylesheets on your Angular application.",
   "version": "0.0.1",
   "author": {
@@ -19,8 +19,8 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "@angular/common": "^17.x",
+    "@angular/core": "^17.x"
   },
   "dependencies": {
     "tslib": "^2.3.0"

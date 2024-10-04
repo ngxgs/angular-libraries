@@ -8,7 +8,7 @@ Use this injectable class for easily add and remove stylesheets on your Angular 
 
 ### Install
 
-Run the command: `npm install ngx-style-manager`, inside your Angular application.
+Run the command: `npm install @ngxgs/style-manager`, inside your Angular application.
 
 ### Usage Exemple
 
