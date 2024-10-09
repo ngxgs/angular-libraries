@@ -1,0 +1,30 @@
+{
+  "name": "@ngxgs/powered-storage",
+  "description": "",
+  "version": "0.0.1",
+  "author": {
+    "email": "gabriel.dsouzapro@gmail.com",
+    "name": "Gabriel de Souza",
+    "url": "https://www.linkedin.com/in/sougabriels/"
+  },
+  "keywords": [
+    "Angular",
+    "Web Storage",
+    "Local Storage",
+    "Session Storage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngxgs/libraries.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^17.x",
+    "@angular/core": "^17.x",
+    "rxjs": "^7.x"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
