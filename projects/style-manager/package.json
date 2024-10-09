@@ -1,7 +1,7 @@
 {
   "name": "@ngxgs/style-manager",
   "description": "Manage stylesheets on your Angular application.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "email": "gabriel.dsouzapro@gmail.com",
     "name": "Gabriel de Souza",
