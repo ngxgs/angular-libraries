@@ -1,30 +1,30 @@
 {
-  "name": "@ngxgs/connection-status",
-  "description": "This library provide a simple way to identify when user is online or offline.",
-  "version": "0.0.1",
-  "author": {
-    "email": "gabriel.dsouzapro@gmail.com",
-    "name": "Gabriel de Souza",
-    "url": "https://www.linkedin.com/in/sougabriels/"
-  },
-  "keywords": [
-    "Angular",
-    "Connection Status",
-    "RxJs",
-    "Renderer2"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngxgs/libraries.git"
-  },
-  "license": "MIT",
-  "peerDependencies": {
-    "@angular/common": "^17.x",
-    "@angular/core": "^17.x",
-    "rxjs": "^7.x"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+    "name": "@ngxgs/connection-status",
+    "description": "Provides a simple way to verify when user is online or offline, and listen to these events.",
+    "version": "0.0.4",
+    "author": {
+        "email": "gabriel.dsouzapro@gmail.com",
+        "name": "Gabriel de Souza",
+        "url": "https://www.linkedin.com/in/sougabriels/"
+    },
+    "keywords": [
+        "Angular",
+        "Connection Status",
+        "RxJs",
+        "Renderer2"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ngxgs/libraries.git"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "@angular/common": ">=17.0",
+        "@angular/core": ">=17.0",
+        "rxjs": ">=7.0"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "sideEffects": false
 }

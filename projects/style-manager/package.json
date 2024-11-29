@@ -1,29 +1,30 @@
 {
-  "name": "@ngxgs/style-manager",
-  "description": "Manage stylesheets on your Angular application.",
-  "version": "0.0.2",
-  "author": {
-    "email": "gabriel.dsouzapro@gmail.com",
-    "name": "Gabriel de Souza",
-    "url": "https://www.linkedin.com/in/sougabriels/"
-  },
-  "keywords": [
-    "Angular",
-    "Stylesheet Manager",
-    "Renderer2",
-    "Server-Side Rendering"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngxgs/libraries.git"
-  },
-  "license": "MIT",
-  "peerDependencies": {
-    "@angular/common": "^17.x",
-    "@angular/core": "^17.x"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+    "name": "@ngxgs/style-manager",
+    "description": "Provides a easy way to manage dynamically stylesheets",
+    "version": "0.0.4",
+    "author": {
+        "email": "gabriel.dsouzapro@gmail.com",
+        "name": "Gabriel de Souza",
+        "url": "https://www.linkedin.com/in/sougabriels/"
+    },
+    "keywords": [
+        "Angular",
+        "Stylesheet Manager",
+        "Renderer2",
+        "Server-Side Rendering"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ngxgs/libraries.git"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "@angular/common": ">=17.0",
+        "@angular/core": ">=17.0",
+        "rxjs": ">=7.0"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "sideEffects": false
 }
