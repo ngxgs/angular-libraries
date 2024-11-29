@@ -27,20 +27,11 @@
       "connection-status": [
         "./dist/connection-status"
       ],
-      "cookie-popup": [
-        "./dist/cookie-popup"
-      ],
       "powered-storage": [
         "./dist/powered-storage"
       ],
-      "rx-local-storage": [
-        "./dist/rx-local-storage"
-      ],
       "style-manager": [
         "./dist/style-manager"
-      ],
-      "theme-picker": [
-        "./dist/theme-picker"
       ]
     }
   },
