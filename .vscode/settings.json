@@ -1,0 +1,33 @@
+{
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/bazel-out/**": true,
+        "**/dist/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/bazel-out": true,
+        "**/dist": true,
+        ".history": true
+    },
+    "git.ignoreLimitWarning": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.component.ts": "${capture}.component.spec.ts,index.ts,${capture}.component.html,${capture}.component.scss,${capture}-theme.scss",
+        "*.service.ts": "${capture}.service.spec.ts,index.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "tsconfig.lib.json": "tsconfig.*.json",
+        "package.json": "package-lock.json,yarn.lock,pnpm-lock.yaml,bun.lockb,ng-package.json"
+    },
+    "editor.indentSize": "tabSize",
+    "workbench.tree.indent": 4
+}
