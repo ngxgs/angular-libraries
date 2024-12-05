@@ -29,8 +29,6 @@
             "style-manager": ["./dist/style-manager"]
         }
     },
-    "include": ["src/**/*.ts", "src/**/*.html", "src/**/*.css"],
-    "exclude": ["node_modules", "dist", "e2e"],
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
         "strictInjectionParameters": true,
