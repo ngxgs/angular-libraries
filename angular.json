@@ -28,7 +28,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/style-manager/tsconfig.spec.json",
-            "polyfills": []
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -58,7 +58,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/powered-storage/tsconfig.spec.json",
-            "polyfills": []
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -88,7 +88,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/connection-status/tsconfig.spec.json",
-            "polyfills": []
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
