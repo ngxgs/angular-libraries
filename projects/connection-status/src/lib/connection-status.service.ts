@@ -1,40 +1,49 @@
-import { inject, Injectable, OnDestroy, RendererFactory2, signal } from "@angular/core";
-import { fromEvent, merge, shareReplay } from "rxjs";
+import {
+    inject,
+    Injectable,
+    OnDestroy,
+    RendererFactory2,
+    signal,
+} from '@angular/core';
+import { fromEvent, merge, Observable, shareReplay } from 'rxjs';
 
 /**
- * Inject this class for listen when user become online and offline. 
+ * Inject this class for listen when user become online and offline.
  */
 @Injectable({
-    providedIn: 'root'
+    providedIn: 'root',
 })
 export class ConnectionStatus implements OnDestroy {
-    protected readonly rendererFactory = inject(RendererFactory2);
-    protected readonly renderer = this.rendererFactory.createRenderer(null, null);
+    protected readonly rendererF2 = inject(RendererFactory2);
+    protected readonly renderer = this.rendererF2.createRenderer(null, null);
     protected unListener!: () => void;
 
     /**
      * An Observable of the events online and offline.
+     * Before use this Observable, verify if 'window' global element i'snt 'undefined'.
      */
-    observeEvents$ = merge(
-        fromEvent<Event>(window, "online").pipe(shareReplay()),
-        fromEvent<Event>(window, "offline").pipe(shareReplay())
+    onStatusChange$: Observable<Event> = merge(
+        fromEvent<Event>(window, 'online').pipe(shareReplay()),
+        fromEvent<Event>(window, 'offline').pipe(shareReplay())
     );
-    
+
     /**
-     * A boolean signal, useful in ternary conditionals.
+     * A Signal of boolean, true if user has connection or false if not. Useful in ternary conditionals.
      */
-    isOnline = signal<boolean>(true);
+    status = signal<boolean>(true);
 
     constructor() {
-        this.createEvent();
+        try {
+            this.createEvent();
+        } catch {}
     }
-    
+
     protected createEvent() {
-        this.unListener = this.renderer.listen("window", "online", () => {
-            this.isOnline.set(true);
+        this.unListener = this.renderer.listen('window', 'online', () => {
+            this.status.set(true);
         });
-        this.unListener = this.renderer.listen("window", "offline", () => {
-            this.isOnline.set(false);
+        this.unListener = this.renderer.listen('window', 'offline', () => {
+            this.status.set(false);
         });
     }
 
