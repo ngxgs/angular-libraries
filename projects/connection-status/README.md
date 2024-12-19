@@ -20,7 +20,7 @@ import { ConnectionStatus } from '@ngxgs/connection-status';
 export class MyComponent {
     connService = inject(ConnectionStatus);
     constructor() {
-        this.connService.observeEvents$.subscribe((event) => {
+        this.connService.onStatusChange$.subscribe((event) => {
             // verify if the user go online
             if (event.type === 'online') {
                 // do something...
