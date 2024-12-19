@@ -1,7 +1,7 @@
 {
     "name": "@ngxgs/style-manager",
     "description": "Provides a easy way to manage dynamically stylesheets",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": {
         "email": "gabriel.dsouzapro@gmail.com",
         "name": "Gabriel de Souza",
@@ -15,7 +15,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ngxgs/libraries.git"
+        "url": "https://github.com/ngxgs/angular-libraries.git"
     },
     "license": "MIT",
     "peerDependencies": {
