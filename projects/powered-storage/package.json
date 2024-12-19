@@ -1,7 +1,7 @@
 {
     "name": "@ngxgs/powered-storage",
     "description": "Provides a service to manage the Local and Session Storage from the WebStorage API",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": {
         "email": "gabriel.dsouzapro@gmail.com",
         "name": "Gabriel de Souza",
@@ -15,7 +15,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ngxgs/libraries.git"
+        "url": "https://github.com/ngxgs/angular-libraries.git"
     },
     "license": "MIT",
     "peerDependencies": {
